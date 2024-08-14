@@ -80,7 +80,7 @@ teste_board = ['#', 'X', 'O', 'X', 'O', 'X', 'O', 'X', 'X', 'O', 'O']
 
 print(display_borad(teste_board))
 
-def player_iput():
+def player_input():
 
     marker = ''
 
@@ -96,7 +96,7 @@ def player_iput():
 
     return (player1,player2)
 
-print(player_iput())
+print(player_input())
     
 #criar uma forma para colocar os indices
 #adicionar o input relacionado ao indice
