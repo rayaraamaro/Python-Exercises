@@ -1,5 +1,6 @@
 #Jogo da Velha 
 
+
 #addX = []
 #addO = []
 
@@ -43,7 +44,7 @@ def replacement_choice(game_list, position):
 
     return game_list
 
-print(replacement_choice(game_list,1))
+print(replacement_choice(game_list,0))
 
 def gameon_choice():
 
@@ -69,6 +70,34 @@ while game_on:
     display_game(game_list)
     game_on = gameon_choice()
 
+def display_borad(board):
+
+    print(board[7]+'|'+board[8]+'|'+board[9])
+    print(board[4]+'|'+board[5]+'|'+board[6])
+    print(board[1]+'|'+board[2]+'|'+board[3])
+
+teste_board = ['#', 'X', 'O', 'X', 'O', 'X', 'O', 'X', 'X', 'O', 'O']
+
+print(display_borad(teste_board))
+
+def player_iput():
+
+    marker = ''
+
+    while marker != 'X' and marker != 'O':
+        marker = input('Jogador 1, escolha "X" ou "O": ')
+
+    player1 = marker
+    
+    if player1 == 'X':
+        player2 = 'O'
+    else:
+        player2 = 'X'
+
+    return (player1,player2)
+
+print(player_iput())
+    
 #criar uma forma para colocar os indices
 #adicionar o input relacionado ao indice
 
