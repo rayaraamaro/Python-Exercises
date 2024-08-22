@@ -27,15 +27,24 @@ def pet_speak(pet): #Função para chamar qualquer uma das duas classes
 pet_speak(max)
 pet_speak(raj)
 
-class Bee():
+class Animal():
+
     def __init__(self,name):
         self.name = name
+
+    def speak(self):
+        raise NotImplementedError("Subclass must implement this abstract method")
+
+
+class Bee(Animal):
+    #def __init__(self,name):
+     #   self.name = name
     def speak(self):
         return self.name + " says zzzz"
 
-class Fish():
-    def __init__(self,name):
-        self.name = name
+class Fish(Animal):
+    #def __init__(self,name):
+      #  self.name = name
     def speak(self):
         return self.name + " says gluglu"
 
