@@ -22,3 +22,4 @@ class Dog(Animal): #Classe derivada
 myanimal= Animal()
 mydog = Dog()
 mydog.eat()
+
